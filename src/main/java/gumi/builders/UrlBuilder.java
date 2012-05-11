@@ -43,7 +43,7 @@ public final class UrlBuilder {
     private static final Pattern URI_PATTERN =
             Pattern.compile("^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?");
 
-    private static final Pattern AUTHORITY_PATTERN = Pattern.compile("((.*)@)?(.*)?(:([0-9]*))?");
+    private static final Pattern AUTHORITY_PATTERN = Pattern.compile("((.*)@)?([^:]*)(?::([0-9]+))?");
 
     private final Charset inputEncoding;
 
